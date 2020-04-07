@@ -1,0 +1,69 @@
+{
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "jest/globals": true
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:security/recommended",
+    "plugin:node/recommended",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "plugin:jsdoc/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "script",
+    "ecmaFeatures": {
+      "globalReturn": true,
+      "impliedStrict": false,
+      "jsx": false
+    }
+  },
+  "plugins": ["security", "node", "jest", "jsdoc", "prettier"],
+  "root": true,
+  "noInlineConfig": false,
+  "rules": {
+    "no-template-curly-in-string": "warn",
+    "default-case": "warn",
+    "eqeqeq": ["warn", "always"],
+    "strict": ["warn", "safe"],
+    "init-declarations": ["warn", "always"],
+    "no-label-var": "warn",
+    "no-shadow": "warn",
+    "no-undefined": "warn",
+    "no-use-before-define": "warn",
+    "global-require": "warn",
+    "handle-callback-err": ["warn", "error"],
+    "no-mixed-requires": "warn",
+    "no-new-require": "warn",
+    "camelcase": ["error", { "properties": "always" }],
+    "capitalized-comments": "warn",
+    "comma-spacing": "warn",
+    "comma-style": "warn",
+    "eol-last": "warn",
+    "func-call-spacing": ["warn", "never"],
+    "max-len": [
+      "warn",
+      {
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreTrailingComments": true
+      }
+    ],
+    "no-trailing-spaces": "warn",
+    "no-underscore-dangle": "warn",
+    "no-whitespace-before-property": "warn",
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "arrow-spacing": ["warn", { "before": true, "after": true }],
+    "arrow-parens": "warn"
+  }
+}
