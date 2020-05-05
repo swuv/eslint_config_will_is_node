@@ -1,6 +1,6 @@
 {
   "name": "@will_is_santos/eslint-config-backend",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "My eslint-config file for node applications without typescript.",
   "main": "index.js",
   "scripts": {
@@ -40,5 +40,8 @@
     "eslint-plugin-security": ">=1.4.0",
     "prettier": ">=2.0.4"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
 }
