@@ -1,3 +1,5 @@
 .travis.yml
 
 __test__/
+
+.github/
