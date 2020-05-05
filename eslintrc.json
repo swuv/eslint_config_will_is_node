@@ -1,34 +1,30 @@
 {
+  "root": true,
+  "noInlineConfig": false,
   "env": {
     "node": true,
-    "commonjs": true,
-    "jest/globals": true
+    "commonjs": true
   },
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
+  "parserOptions": {
+    "ecmaVersion": 2015,
+    "sourceType": "script"
+  },
+  "plugins": [
+    "security",
+    "node",
+    "jsdoc"
+    ],
   "extends": [
     "eslint:recommended",
     "plugin:security/recommended",
     "plugin:node/recommended",
-    "plugin:jest/recommended",
-    "plugin:jest/style",
     "plugin:jsdoc/recommended",
     "plugin:prettier/recommended"
   ],
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "script",
-    "ecmaFeatures": {
-      "globalReturn": true,
-      "impliedStrict": false,
-      "jsx": false
-    }
-  },
-  "plugins": ["security", "node", "jest", "jsdoc", "prettier"],
-  "root": true,
-  "noInlineConfig": false,
   "rules": {
     "no-template-curly-in-string": "warn",
     "default-case": "warn",
