@@ -1,6 +1,6 @@
 {
   "name": "@will_is_santos/eslint-config-backend",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "My eslint-config file for node applications without typescript.",
   "main": "index.js",
   "scripts": {
