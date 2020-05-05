@@ -1,18 +1,16 @@
 {
   "name": "@will_is_santos/eslint-config-backend",
-  "version": "1.0.0",
-  "description": "my eslint config file for node applications",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "1.1.0",
+  "description": "My eslint-config file for node applications without typescript.",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/willisSantos/eslint-config-backend.git"
   },
   "keywords": [
     "eslint",
-    "eslintconfig"
+    "eslintconfig",
+    "node"
   ],
   "author": "Willis Santos",
   "license": "MIT",
@@ -23,7 +21,6 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-jsdoc": "^22.1.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.2",
@@ -33,11 +30,11 @@
   "peerDependencies": {
     "eslint": ">=6.8.0",
     "eslint-config-prettier": ">=6.10.1",
-    "eslint-plugin-jest": ">=23.8.2",
     "eslint-plugin-jsdoc": ">=22.1.0",
     "eslint-plugin-node": ">=11.1.0",
     "eslint-plugin-prettier": ">=3.1.2",
     "eslint-plugin-security": ">=1.4.0",
     "prettier": ">=2.0.4"
-  }
+  },
+  "dependencies": {}
 }
