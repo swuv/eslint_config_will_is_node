@@ -3,6 +3,9 @@
   "version": "1.1.0",
   "description": "My eslint-config file for node applications without typescript.",
   "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/willisSantos/eslint-config-backend.git"
@@ -25,6 +28,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-security": "^1.4.0",
+    "jest": "^26.0.1",
     "prettier": "^2.0.4"
   },
   "peerDependencies": {
